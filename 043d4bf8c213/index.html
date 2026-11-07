@@ -1,0 +1,51 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Евроколор (EuroColor): образец сайта</title><style>:root{--fs:17px;--bg:#f6f6f4;--panel:#fff;--ink:#16181a;--mute:#50565c;--line:#dcdedf;--line2:#969ca1;--accent:#c2410c;--on:#fff8f4;--tint:#ececea;--err:#a4261c;--r:6px;--r2:8px;--slotink:#f2f2f0;--slot1:linear-gradient(160deg,#4a5057,#23262a);--slot2:linear-gradient(170deg,#62686f,#2a2d31 60%,#161819);--slot3:linear-gradient(160deg,#9a4a22,#3a2a24)}
+@media(prefers-color-scheme:dark){:root{--bg:#121416;--panel:#1a1d20;--ink:#eceeef;--mute:#aab0b5;--line:#2c3034;--line2:#666c72;--accent:#fb8c4f;--on:#23130a;--tint:#212528;--err:#ff9c8f}}
+@font-face{font-family:Onest;src:url(../assets/onest-cyrillic.woff2) format('woff2');font-weight:100 900;font-display:swap;unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:Onest;src:url(../assets/onest-latin.woff2) format('woff2');font-weight:100 900;font-display:swap;unicode-range:U+0000-00FF,U+2000-206F,U+20AC,U+20BD}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 var(--fs)/1.55 Onest,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+a{color:inherit}.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.sample{background:var(--ink);color:var(--bg);font-size:13px;line-height:1.35;padding:8px 20px;text-align:center}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.brand{font-weight:700;font-size:19px;letter-spacing:-.01em}.tel{font-weight:600;text-decoration:none;white-space:nowrap}
+h1{font-size:clamp(36px,6vw,60px);line-height:1.05;letter-spacing:-.025em;margin:0 0 16px;font-weight:700}
+h2{font-size:clamp(26px,3.6vw,36px);line-height:1.15;letter-spacing:-.02em;margin:0 0 20px;font-weight:700}
+.lead{font-size:1.12em;color:var(--mute);max-width:46ch;margin:0 0 24px}
+section{padding:56px 0}
+.btn{display:inline-block;background:var(--accent);color:var(--on);border:0;border-radius:var(--r);padding:14px 22px;font:600 16px/1.2 inherit;font-family:inherit;text-decoration:none;cursor:pointer;white-space:nowrap;transition:transform .15s ease}
+.btn:active{transform:translateY(1px) scale(.99)}.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,.pill:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r2);padding:22px}
+label{display:block;font-size:14px;font-weight:600;margin:0 0 6px}
+input,select,textarea{width:100%;font:400 16px/1.3 inherit;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line2);border-radius:var(--r);padding:12px}
+.f{margin-bottom:14px}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.two>*,.hero>*{min-width:0}
+.err{color:var(--err);font-size:14px;margin:6px 0 0;min-height:0}
+.done{display:none;background:var(--tint);border-radius:var(--r);padding:14px;margin-top:14px;font-size:15px}.done.on{display:block}
+.slots{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:170px 170px;gap:12px}
+.slot{margin:0;border-radius:var(--r2);display:flex;align-items:flex-end;padding:14px;color:var(--slotink);font-size:14px;background:var(--slot1)}
+.slot:first-child{grid-row:span 2;background:var(--slot2)}.slot:last-child{background:var(--slot3)}
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:18px 40px;padding:0;margin:0;list-style:none}
+.facts li{padding-top:12px;border-top:2px solid var(--accent);font-weight:500}
+.items{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.item{background:var(--tint);border-radius:var(--r2);padding:18px;font-weight:500}
+.contacts{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:start}
+.contacts p{margin:0 0 10px}.foot{padding:26px 0 40px;color:var(--mute);font-size:14px}
+.rise{animation:rise .5s cubic-bezier(.16,1,.3,1) both}
+@keyframes rise{from{transform:translateY(12px)}to{transform:none}}
+@media(prefers-reduced-motion:reduce){.rise{animation:none}html{scroll-behavior:auto}.btn{transition:none}}
+@media(max-width:767px){.hero,.contacts,.items,.facts{grid-template-columns:1fr!important}.slots{grid-template-columns:1fr;grid-template-rows:190px 120px 120px}.slot:first-child{grid-row:auto}section{padding:40px 0}.nav .btn{display:none}.brand{font-size:16px;line-height:1.25}.tel{font-size:15px}}
+</style></head><body>
+<div class="sample">Образец сайта для «Евроколор (EuroColor)». Это не официальный сайт. Подготовил Георгий, 1georg.moscow@gmail.com</div>
+<header class="wrap nav"><span class="brand">Евроколор (EuroColor)</span><a class="tel" href="tel:+73472666699+79272366699">+7 (347) 266-66-99; +7 927 236-66-99</a></header><main><section style="padding-top:28px"><div class="wrap hero" style="display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center"><div class="rise"><h1>Евроколор (EuroColor)</h1><p class="lead">СТО в Уфе: кузовной ремонт, покраска, слесарные работы и ТО.</p></div><form class="panel rise" id="form" novalidate>
+<h2 style="font-size:22px;margin-bottom:14px">Записаться онлайн</h2>
+<div class="f"><label for="s">Услуга</label><select id="s"><option>Покраска переднего крыла - от 6 600</option><option>Покраска бампера - от 7 700</option><option>Покраска капота - от 8 800</option><option>Ремонт с растяжением (40-50%) - от 5 720</option><option>ЛКМ на один элемент - от 3 300</option><option>Полировка и детейлинг</option><option>Рестайлинг и тюнинг</option><option>Контрактные двигатели и АКПП</option></select></div>
+<div class="two"><div class="f"><label for="a">День</label><input id="a" type="date" required></div>
+<div class="f"><label for="h">Время</label><select id="h"><option>10:00</option><option>12:00</option><option>14:00</option><option>16:00</option><option>18:00</option></select></div></div>
+<div class="f"><label for="p">Ваш телефон</label><input id="p" type="tel" autocomplete="tel" required></div>
+<button class="btn" style="width:100%">Записаться</button>
+<p class="err" id="e" role="alert"></p><div class="done" id="d" role="status"></div></form>
+<script>(function(){var a=document.getElementById('a');a.min=new Date().toISOString().slice(0,10);
+document.getElementById('form').onsubmit=function(ev){ev.preventDefault();var e=document.getElementById('e'),d=document.getElementById('d');e.textContent='';d.className='done';
+if(!a.value){e.textContent='Выберите день';return}if(document.getElementById('p').value.replace(/\D/g,'').length<10){e.textContent='Укажите телефон, чтобы мы подтвердили запись';return}
+d.textContent="Это образец, запись никуда не ушла. На готовом сайте заявка сразу придёт Вам, без WhatsApp.";d.className='done on'}})();</script></div></section><section><div class="wrap"><h2>Услуги и цены</h2><div class="items"><div class="item">Покраска переднего крыла - от 6 600</div><div class="item">Покраска бампера - от 7 700</div><div class="item">Покраска капота - от 8 800</div><div class="item">Ремонт с растяжением (40-50%) - от 5 720</div><div class="item">ЛКМ на один элемент - от 3 300</div><div class="item">Полировка и детейлинг</div><div class="item">Рестайлинг и тюнинг</div><div class="item">Контрактные двигатели и АКПП</div></div></div></section><section style="padding-top:0"><div class="wrap"><div class="slots"><figure class="slot">Здесь будет Ваше главное фото</figure><figure class="slot">Ваше фото</figure><figure class="slot">Ваше фото</figure></div></div></section><section><div class="wrap"><h2>Почему к нам</h2><ul class="facts"><li>Гарантия 6 месяцев на все работы</li><li>Работает ПН-СБ с 09:00 до 19:00</li></ul></div></section><section id="contacts"><div class="wrap contacts"><div><h2>Контакты</h2><p><a class="tel" href="tel:+73472666699+79272366699">+7 (347) 266-66-99; +7 927 236-66-99</a></p><p><a href="mailto:info@eurocolor102.ru">info@eurocolor102.ru</a></p><p>Петергофская улица, 8/1а</p></div></div></section></main>
+<footer class="wrap foot">Образец. Заявки с этой страницы никуда не отправляются.</footer></body></html>
